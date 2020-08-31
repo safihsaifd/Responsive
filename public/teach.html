@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教程</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/teach.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 导航栏模块 -->
+    <div id="header" class="clearfix" style="border-bottom:2px solid whitesmoke;background-color: #fff;">
+        <div id="topwidth" class="navbar navbar-expand-md navbar-light w-100"> 
+    		 <!-- 折导航栏按钮 -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#listmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    		<!-- 标题图 -->
+            <a href="home.html"><img src="./img/logo.png" id="topimg"></a>
+    		<!-- 悬浮导航栏 -->
+    		<div class="avatar d-xs-inline d-md-none mr-2">
+    			<li class="dropdown list-unstyled">
+    				<a href="#" class="menubar"><img src="./img/avatar.png"></a>
+    				<ul class="dropdown-menu p-0">
+    					<li  class="text-center"><a href="login.html" class="text-dark">登陆</a></li>
+    					<li  class="text-center"><a href="reg.html" class="text-dark">注册</a></li>
+    				</ul>	
+    			</li>
+    		</div>
+    		<!--主导航拦/下拉导航  -->
+            <ul id="listmenu" class="list-unstyled collapse navbar-collapse">
+                <li class="nav-item"><a href="home.html" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="teach.html" class="nav-link">教程</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">课程</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">社区</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">工作咨询</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">关于我们</a></li>
+            </ul>
+    		<!-- 搜索框 -->
+            <div id="select" style="display:inline-flex;" class="d-sm-none d-md-inline-flex">
+                <input type="text" placeholder="课程搜索" class="form-control p-0 d-sm-none d-lg-flex">
+                <a href="#" class="d-sm-none d-md-inline"><img src="./img/bottom.png"></a>
+            </div>
+    		<!-- 登录注册 -->
+            <ul id="listlogin" class="list-unstyled d-sm-none d-md-flex">
+                <li><a href="login.html">登陆</a></li>
+                <li><a href="reg.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--首行大图片-->
+    <div class="container-fluid p-0">
+        <div><img src="./img/aboutbg.jpg" class="w-100"></div>
+    </div>
+    <!-- 搜索输入框 -->
+    <div class="container d-flex justify-content-center">
+        <input type="text" class="form-control d-inline-block mt-3 mb-3 text-muted font_small" placeholder="输入关键词搜索" id="input2">
+        <div class="d-flex align-self-center"><a href="#" class="d-sm-none d-md-inline"><img src="./img/bottom.png"></a></div>
+    </div>
+    <!-- 虚线分类框 -->
+    <div class="container mb-5">
+        <ul class="list-group list-unstyled">
+            <li class="list-group-item">
+                <span class="font_small text-muted link-dark">所有分类：</span>
+                <a href="#" class="text-muted p-4 link-dark">教程></a>
+            </li>
+            <li class="list-group-item py-4 border_top">
+                <span class="font_small text-muted link-dark">分类:</span>
+                <div class="d-inline-block" style="margin-left: 67px;">
+                    <a href="#" class="font_small text-muted mr-5 link-dark">全部</a>
+                    <a href="#" class="font_small text-success mr-5 link-dark">教程</a>
+                    <a href="#" class="font_small text-muted link-dark">课程</a>
+                </div>
+            </li>
+            <li class="list-group-item border_top">
+                <div class="d-inline-block" style="margin-left: 107px;">
+                    <a href="#" class="font_small text-success mr-5 link-dark">全部</a>
+                    <a href="#" class="font_small text-muted mr-5 link-dark">图文教程</a>
+                    <a href="#" class="font_small text-muted mr-5 link-dark">大神访问</a>
+                    <a href="#" class="font_small text-muted link-dark">视频教程</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 水平导航模块 -->
+    <div class="container bg-light p-0 mb-4">
+        <ul class="nav nav-sort clearfix">
+            <li><a href="#" class="align-middle d-inline-block" style="height: 40px;">最新</a></li>
+            <li><a href="#" class="align-middle d-inline-block" style="height: 40px;">最热</a></li>
+            <li><a href="#" class="align-middle d-inline-block" style="height: 40px;">推荐</a></li>
+        </ul>
+    </div>
+    <!-- 作品展示模块 -->
+    <div class="container p-0">
+        <div class="row ">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic1.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">怎么把爱好变成工作成为职业画师，原画人美宣插画教程【李睿】</a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic2.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                原画人二次元插画教程，Q版设计案例讲解，sai的用法演示【冷蝉】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic3.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                从业9年的大佬都是这样细化角色的，原画人角色原画教程【九袋掌老】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic4.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                原画人场景原画教程，四种场景方法防止你掉进场景坑【东彪】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic5.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                简单巧妙的处理线稿的方法，原画人插画教程【潘潘】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic6.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                江南百景图同人头像，原画人伪厚涂插画教程【寺久】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic7.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                一起来画世界第一公主殿下，原画人二次元插画教程【芒果猫】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic8.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                日系天空的绘制表达，原画人二次元场景原画教程【JW】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic9.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                作业批改，原画人二次元插画教程【芒果猫】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic10.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                下笔前最重要的事你做好了吗，原画人游戏原画教程【彭倩】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic11.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                巧妙的日系细化方式，原画人日韩风商业插画教程【九樾儿】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic12.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                如何玩转光线，原画人游戏原画教程【铁匠】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic13.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                不同材质的刻画：头发、金属等，原画人游戏原画教程【纯子】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic14.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                眼睛没法对焦？不吸引人？了解这几步就行，原画人二次元插画教程【芒果猫】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic15.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                针对性作业批改，原画人二次元插画教程【芒果猫】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic16.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                怎么吸干参考图的血，原画人游戏原画教程【彭倩】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic17.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                不仅是日系，厚涂中也好用的勾线技巧，原画人日韩风商业插画教程【九樾儿】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic18.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                女性头像绘制，原画人游戏原画教程【玉梨子】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic19.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                长发绘制技巧，原画人插画教程【潘潘】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="course-item">
+                    <div class="course-img">
+                        <a href="#" target="_blank">
+                            <span class="tags">
+                                <span class="tag-coursemark"></span>
+                            </span>
+                            <img src="./img/studypic20.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <!-- 上面为图片模块 下面为文字模块 -->
+                    <div class="course-info">
+                        <div class="title">
+                            <a href="#" class="link-dark" target="_blank" style="font-size:15px;">
+                                插画设计思路的秘密，原画人二次元场景插画教程【JW】
+                              </a>
+                        </div>
+                        <div class="metas clearfix">
+                            <span class="num mr-2"><img src="./img/peopel.png" class="mr-1">246</span>
+                            <span class="comment"><img src="./img/comment.png" class="mr-1">0</span>
+                            <span class="course-price-widget float-right">
+                                <span class="free">免费</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- 页脚模块 -->
+        <div class="container mb-5 mt-3">
+            <div class="d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item active">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>4</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>5</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>6</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>></a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class='page-link rounded mr-2 text-dark'>>|</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 尾部模块 -->
+    <div class="es-footer-link">
+        <div class="container" style="max-width: 1280px;">
+            <div class="row">
+                <table></table>
+                <div class="col-md-8 foot-main clearfix">
+                    <div class="row no-gutters foot_row">
+                        <div class="col-xs-4" style="margin:0 30px;">
+                            <h3>关于我们</h3>
+                            <ul>
+                                <li><a href="#">了解我们</a></li>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">服务协议</a></li>
+                                <li><a href="#">网络地图</a></li>
+                                <li><a href="#">XML地图</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4" style="margin:0 30px;">
+                            <h3>帮助中心</h3>
+                            <ul>
+                                <li><a href="#">家长指南</a></li>
+                                <li><a href="#">使用中心</a></li>
+                                <li><a href="#">费用保障</a></li>
+                                <li><a href="#">意见反馈</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4" style="margin:0 30px;">
+                            <h3>平台特色</h3>
+                            <ul>
+                                <li><a href="#">用户好评</a></li>
+                                <li><a href="#">在线平台</a></li>
+                                <li><a href="#">教师认证</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-none d-md-block col-md-4 foot-logo" align="center">
+                    <a href="#" target="_blank">
+                        <img src="./img/end.png" alt="建议图片大小为233*64" height="150px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

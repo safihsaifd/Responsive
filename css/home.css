@@ -1,0 +1,210 @@
+/* 第3个模块样式 */
+.teacher-item{
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 4px;
+    border: 1px solid #e4ecf3;
+}
+.teacher-top{
+    padding: 20px 10px;
+    background-color: #f5f8fa;
+}
+.avatar-lg{
+    border: 4px solid #fff;
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.teacher-top .link-dark{
+    height: 22px;
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.position{
+    color: #c1c1c1;
+    display: block;
+    margin-top:10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: transparent;	
+}
+.teacher-bottom{
+    height: 90px;
+}
+.about{
+    margin-top: 20px;
+    padding: 0 10px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #919191;
+    opacity: 1;
+}
+/* 第四个模块样式 */
+.recommend-students{
+    background: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% ;
+}
+.recommend-students img{
+    width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.recommend-students img:hover{
+    transition: ease .6s;
+    transform: scale(1.05);
+}
+.work-con{
+    padding-bottom: 50px;
+}
+#row-pic-2>div{
+    border: 0px;
+    margin: 12px 0px;
+    padding: 0 11px;
+    background: transparent;
+}
+#row-pic-3>div{
+    border: 0px;
+    padding: 0px;
+    margin: 15px ;
+    background: transparent;
+}
+/* 第5个模块样式 */
+.course-item{
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border: 1px solid #e4ecf3;
+    background-color: #fff;
+}
+.course-img{
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.tags{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.tag-coursemark{
+    width: 40px;height: 50px;
+    display: inline-block;
+    background: url(../img/tag.png) no-repeat;
+}
+.img-responsive{
+    width: 100%;padding: 10px;
+}
+.title{
+    margin-top: 10px;
+    padding: 0 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.free{
+    color: #43bc60;
+}
+.course-list .course-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    transition: all .3s ease
+}
+/* 第6个模块样式 */
+.class-section{
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.panel-body{padding: 15px 0;}
+.panel-body>div{padding: 10px;}
+.innerdiv{
+    box-shadow: 0 0 5px 5px #eee;
+    border-radius: 5px;
+}
+.media-body .title{
+    margin: 15px 10px -3px;
+    height: 20px;
+    padding: 0px;
+    font-size: 15px;
+    overflow: hidden;
+}
+.media-left{
+    height: 370px;
+    overflow: hidden;
+    display: block;
+}
+.media-left img:hover{
+    transform:scale(1.1,1.1) rotate(5deg);
+    transition: ease .6s;
+}
+/* 第7个模块样式 */
+.introduction-section{
+    position: relative;
+    background-color: raba(0,0,0,1);
+    background-image: url(../img/job.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.introduction-section .introduction-item{
+    margin: 30px 0 45px;
+    text-align: center;
+    vertical-align: top;
+    display: block;
+    color: #fff;
+    padding: 30px;
+    border: 1px solid #53b683;
+    border-radius: 7px;
+    box-shadow: 0 0 14px 3px #53b683;
+}
+.introduction-section .introduction-item:hover {
+    box-shadow:0px 0px 8px 5px #53b683;
+}
+.introduction-section .title{
+    margin: 20px 0;
+    font-size: 18px;
+}
+/* 第8个模块样式 */
+.swiper-container{
+    width: 100%;height: 100%;margin-top: 30px;
+}
+.light1:hover{
+    box-shadow:0px 0px 15px 4px #53b683;
+    transition: ease .3s;
+}
+/* 第9个模块重写轮播图箭头 */
+.carousel-control-prev,
+.carousel-control-next{
+    width: 6%;height: 20%;
+    background-color: #aaa;
+    border-radius: 0.25rem;
+    top: 40%;
+}
+.carousel-control-prev{left:-40px;}
+.carousel-control-next{right:-40px;}
+/* 第10个模块样式 */
+.es-friend-link{
+    border-top: 1px solid #e1e8ed;
+    background-color: #f5f8fa;
+    padding: 20px 0;
+}
+.text-sm{
+    font-size: 12px !important;
+}
+.es-friend-link ul{
+    padding-left: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}

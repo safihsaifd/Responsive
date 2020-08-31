@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;border: none}
+/* 通用按键点击变绿 */
+.link-dark{
+    text-align: center;
+    color: #616161 !important;
+    text-decoration: none;
+}
+.link-dark:hover{
+    transition: all .3s ease;
+    color: #43bc60 !important;
+    text-decoration: none;
+}
+/* 通用绿标分割线 */
+.hr1{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.hr2{
+    width: 8%;
+    margin: 0 auto;
+    background-color: greenyellow;
+    height: 5px;margin-top: -4px;
+}
+/* 每个模块头部标题样式与更多选项样式 */
+.text-line{
+    padding: 50px 0 0 0;
+    text-align: center;
+    font-size: 32px;
+}
+.section-more-btn{
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-line>h2{
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+.text-line span{
+    color: #fff;
+}
+/* 轮播图重写 */
+.carousel-indicators li{
+    border-radius: 50%;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+/* 阅读量与访问量下标样式 */
+.metas{
+    position: relative;
+    padding: 10px;
+    color: #c1c1c1;
+}
+/* 栅格布局 */
+.row:after {
+    clear: both;
+    margin-left: -10px;
+    margin-right: -10px;
+}

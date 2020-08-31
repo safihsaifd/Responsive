@@ -1,0 +1,30 @@
+/* 尾部模块CSS */
+.es-footer-link{
+    background: #2e2e2e;
+    padding: 55px 0;
+    border-bottom: 1px solid #111;
+}
+.foot-main h3{
+    font-size: 16px;
+    color: #eee;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.foot-main ul{
+    padding: 0;
+    margin-right: 0;
+    list-style-type: none;
+}
+.foot-main ul li{
+    margin-top: 20px;
+}
+.foot-main ul li a{
+    color: #39e08a;
+    font-size: 14px;
+}
+@media screen and (min-width:576px) and (max-width:767.99px){
+    .foot_row{
+        display: flex;
+        justify-content: center;
+    }
+}

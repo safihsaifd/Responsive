@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎登陆</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/login.js"></script>
+</head>
+<body>
+<!-- 导航栏模块 -->
+    <div id="header" class="clearfix" style="border-bottom:2px solid whitesmoke; background-color: #fff;">
+        <div id="topwidth" class="navbar navbar-expand-md navbar-light w-100"> 
+    		 <!-- 折导航栏按钮 -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#listmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    		<!-- 标题图 -->
+            <a href="home.html"><img src="./img/logo.png" id="topimg"></a>
+    		<!-- 悬浮导航栏 -->
+    		<div class="avatar d-xs-inline d-md-none mr-2">
+    			<li class="dropdown list-unstyled">
+    				<a href="#" class="menubar"><img src="./img/avatar.png"></a>
+    				<ul class="dropdown-menu p-0">
+    					<li  class="text-center"><a href="login.html" class="text-dark">登陆</a></li>
+    					<li  class="text-center"><a href="reg.html" class="text-dark">注册</a></li>
+    				</ul>	
+    			</li>
+    		</div>
+    		<!--主导航拦/下拉导航  -->
+            <ul id="listmenu" class="list-unstyled collapse navbar-collapse">
+                <li class="nav-item"><a href="home.html" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="teach.html" class="nav-link">教程</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">课程</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">社区</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">工作咨询</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">关于我们</a></li>
+            </ul>
+    		<!-- 搜索框 -->
+            <div id="select" style="display:inline-flex;" class="d-sm-none d-md-inline-flex">
+                <input type="text" placeholder="课程搜索" class="form-control p-0 d-sm-none d-lg-flex">
+                <a href="#" class="d-sm-none d-md-inline"><img src="./img/bottom.png"></a>
+            </div>
+    		<!-- 登录注册 -->
+            <ul id="listlogin" class="list-unstyled d-sm-none d-md-flex">
+                <li><a href="login.html">登陆</a></li>
+                <li><a href="reg.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- 主题登陆模块 -->
+    <div class="container content-container">        
+        <div class="logon-tab clearfix border-bottom-0 bg-white">
+            <a class="active">登陆账号</a>
+            <a href="reg.html">注册账号</a>
+        </div>
+		<div class="login-border border-top-0 clearfix bg-white">
+			<table></table>
+            <div class="login-main js-login-main" style="padding: 12px 30px;">
+                <div class="login-uid">
+                    <p>账号</p>
+                    <input type="text" id="uname" placeholder="邮箱/用户/手机号">
+                </div>
+                <div class="login-upwd">
+                    <p>密码</p>
+                    <input type="password" id="upwd" placeholder="请输入密码">
+                </div>
+                <!-- 记住密码 -->
+                <div class="pl-1 pb-4" >
+                    <input type="checkbox" name="remember_upwd" id="remenber" checked>
+					<span class="text-muted h7">记住密码</span>
+                </div>
+                <!-- 登陆按钮 -->
+                <div>
+                    <button type="button" class="btn btn-success btn-lg btn-block js-btn-login" onclick="login()">登陆</button>
+                </div>
+                <!-- 找回密码 -->
+                <div class="mbl mt-4 mb-4">
+                    <a href="#" class="text-success">找回密码</a>
+                    <span class="text-muted">&nbsp;|&nbsp;</span>
+                    <span class="text-muted">还没注册账号？</span>
+                    <a href="reg.html" class="text-success">立即注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 尾部模块 -->
+    <div class="es-footer-link">
+        <div class="container" style="max-width: 1280px;">
+            <div class="row">
+                <table></table>
+                <div class="col-md-8 foot-main clearfix">
+                    <div class="row no-gutters foot_row">
+                        <div class="col-xs-4" style="margin:0 30px;">
+                            <h3>关于我们</h3>
+                            <ul>
+                                <li><a href="#">了解我们</a></li>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">服务协议</a></li>
+                                <li><a href="#">网络地图</a></li>
+                                <li><a href="#">XML地图</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4" style="margin:0 30px;">
+                            <h3>帮助中心</h3>
+                            <ul>
+                                <li><a href="#">家长指南</a></li>
+                                <li><a href="#">使用中心</a></li>
+                                <li><a href="#">费用保障</a></li>
+                                <li><a href="#">意见反馈</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4" style="margin:0 30px;">
+                            <h3>平台特色</h3>
+                            <ul>
+                                <li><a href="#">用户好评</a></li>
+                                <li><a href="#">在线平台</a></li>
+                                <li><a href="#">教师认证</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-none d-md-block col-md-4 foot-logo" align="center">
+                    <a href="#" target="_blank">
+                        <img src="./img/end.png" alt="建议图片大小为233*64" height="150px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

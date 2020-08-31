@@ -1,0 +1,71 @@
+body{
+    background: url(../img/bg.jpg);
+}
+/* 头部登录注册<a>样式 */
+.reg-tab{
+	margin: 0 auto;
+	border: 1px solid #e4ecf3;
+}
+.reg-tab>a{
+	display: block;
+	padding: 15px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	color: #616161;
+	text-decoration: none;
+	background-color:#f5f5f5;
+}
+.reg-tab>a.active{
+	background-color:transparent;
+	color: #222;
+	font-size: 18px;
+}
+/*注册框架 */
+.reg-border{
+    padding: 0 15px 15px;
+    margin: 0 auto;
+	margin-top: -30px;
+    border: 1px solid #e4ecf3;
+}
+/* 账号密码输入样式 */
+.reg-uid,.reg-upwd,.reg-phone{margin-bottom: 20px;}
+.reg-uid>p,.reg-upwd>p,.reg-phone>p{
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #717171;
+}
+.reg-uid>input,.reg-upwd>input,.reg-phone>input{
+    border: 2px solid #39e08a;
+    color: #616161;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 100%;
+}
+/* 注册按钮样式 */
+.btn{
+    font-size: 14px;
+    padding: 12px 35px;
+    border-radius:0.3rem;
+    line-height: 1.5;  
+}
+/* 媒体查询 */
+@media (min-width:576px){
+    .reg-tab{width: 100%;}
+	.reg-border{width: 100%;}
+	.content-container{
+		padding: 0 10px;
+		max-width: 1280px;
+		height: 680px;
+		margin-top: 100px;}
+}
+@media (min-width:768px){
+    .reg-tab{width: 460px;}
+    .reg-border{width: 460px;}
+	.content-container{
+		margin: 90px auto;
+		margin-bottom: 150px;
+		height: 524px;}
+}

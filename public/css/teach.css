@@ -1,0 +1,49 @@
+/* 第一个输入框样式 */
+#input2{
+    width: 390px;
+    height: 24px;
+    padding: 6px 12px;
+    border: 2px solid #39e08a;
+    border-top-right-radius:0px ;
+    border-bottom-right-radius:0px ;
+    position: relative;top: 1px;
+}
+.border_top{
+    border-top: 1px dashed #999 !important;;
+}
+.nav-sort > li > a {
+    height: 40px;
+    padding: 10px 15px;
+    color: #616161;
+    text-decoration: none;
+}
+.nav-sort > li > a:hover{
+    color:  #43bc60;
+    transition: all .3s ease
+}
+.nav-sort > li > a:active{
+    color: #fff;
+    background-color: #43bc60;
+}
+.pagination>.active>.page-link{
+    opacity: 1;
+    background-color: #43bc60;
+    border: none;
+    color: #fff;
+    cursor: default;
+}
+.pagination>li>a{
+    background-color: #ececec;
+    border: none;
+}
+.pagination>li>a:hover{
+    opacity: .8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
+    transition: all .3s ease
+}
+.course-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    transition: all .3s ease
+}
